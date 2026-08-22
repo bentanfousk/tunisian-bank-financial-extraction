@@ -1,0 +1,213 @@
+{
+  "doc_id": "ATB_2023",
+  "bank": "Arab Tunisian Bank",
+  "target_year": 2023,
+  "target_scope": "individual",
+  "currency": "TND",
+  "fields": [
+    {
+      "field": "total_assets",
+      "status": "found",
+      "value": 7631376,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 76,
+      "evidence": "TOTAL ACTIF | 2023 | 7 631 376",
+      "distractors": [
+        {
+          "value": 7807412,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 76,
+          "reason": "prior_year"
+        },
+        {
+          "value": 8307879,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 131,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "total_equity",
+      "status": "found",
+      "value": 557442,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 76,
+      "evidence": "TOTAL CAPITAUX PROPRES | 2023 | 557 442",
+      "distractors": [
+        {
+          "value": 566847,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 76,
+          "reason": "prior_year"
+        },
+        {
+          "value": 617788,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 131,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_banking_income",
+      "status": "found",
+      "value": 357317,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 78,
+      "evidence": "PRODUIT NET BANCAIRE | 2023 | 357 317",
+      "distractors": [
+        {
+          "value": 319694,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 78,
+          "reason": "prior_year"
+        },
+        {
+          "value": 406023,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 133,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "operating_income",
+      "status": "found",
+      "value": -6187,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 78,
+      "evidence": "RESULTAT D'EXPLOITATION | 2023 | (6 187)",
+      "distractors": [
+        {
+          "value": 22321,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 78,
+          "reason": "prior_year"
+        },
+        {
+          "value": 19869,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 133,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_income",
+      "status": "found",
+      "value": -9406,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 78,
+      "evidence": "RESULTAT NET DE LA PERIODE | 2023 | (9 406)",
+      "distractors": [
+        {
+          "value": 11397,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 78,
+          "reason": "prior_year"
+        },
+        {
+          "value": 12250,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 133,
+          "reason": "consolidated_net_income_before_minority_interests"
+        },
+        {
+          "value": -158,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 133,
+          "reason": "consolidated_group_net_income"
+        }
+      ]
+    },
+    {
+      "field": "customer_deposits",
+      "status": "found",
+      "value": 6349083,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 76,
+      "evidence": "Dépôts et avoirs de la clientèle | 2023 | 6 349 083",
+      "distractors": [
+        {
+          "value": 6213091,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 76,
+          "reason": "prior_year"
+        },
+        {
+          "value": 6350935,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 131,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_customer_loans",
+      "status": "found",
+      "value": 5366376,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2023,
+      "page": 76,
+      "evidence": "Créances sur la clientèle | 2023 | 5 366 376",
+      "distractors": [
+        {
+          "value": 5445274,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2022,
+          "page": 76,
+          "reason": "prior_year"
+        },
+        {
+          "value": 5904393,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2023,
+          "page": 131,
+          "reason": "consolidated"
+        }
+      ]
+    }
+  ]
+}

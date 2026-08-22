@@ -1,0 +1,206 @@
+{
+  "doc_id": "UBCI_2024",
+  "bank": "Union Bancaire pour le Commerce et l'Industrie",
+  "target_year": 2024,
+  "target_scope": "individual",
+  "currency": "TND",
+  "fields": [
+    {
+      "field": "total_assets",
+      "status": "found",
+      "value": 5175899,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 95,
+      "evidence": "TOTAL ACTIF | 31/12/2024 | 5 175 899",
+      "distractors": [
+        {
+          "value": 4552517,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 95,
+          "reason": "prior_year"
+        },
+        {
+          "value": 5182385,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 155,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "total_equity",
+      "status": "found",
+      "value": 523429,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 95,
+      "evidence": "TOTAL CAPITAUX PROPRES | 31/12/2024 | 523 429",
+      "distractors": [
+        {
+          "value": 494338,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 95,
+          "reason": "prior_year"
+        },
+        {
+          "value": 556941,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 155,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_banking_income",
+      "status": "found",
+      "value": 320707,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 97,
+      "evidence": "PRODUIT NET BANCAIRE | 2024 | 320 707",
+      "distractors": [
+        {
+          "value": 302179,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 97,
+          "reason": "prior_year"
+        },
+        {
+          "value": 321657,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 157,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "operating_income",
+      "status": "found",
+      "value": 87444,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 97,
+      "evidence": "RESULTAT D'EXPLOITATION | 2024 | 87 444",
+      "distractors": [
+        {
+          "value": 82081,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 97,
+          "reason": "prior_year"
+        },
+        {
+          "value": 90345,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 157,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_income",
+      "status": "found",
+      "value": 54093,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 97,
+      "evidence": "RESULTAT NET DE L'EXERCICE | 2024 | 54 093",
+      "distractors": [
+        {
+          "value": 52929,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 97,
+          "reason": "prior_year"
+        },
+        {
+          "value": 54985,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 157,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "customer_deposits",
+      "status": "found",
+      "value": 3779710,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 95,
+      "evidence": "PA 3 - Dépôts et avoirs de la clientèle | 31/12/2024 | 3 779 710",
+      "distractors": [
+        {
+          "value": 3393517,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 95,
+          "reason": "prior_year"
+        },
+        {
+          "value": 3768399,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 155,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_customer_loans",
+      "status": "found",
+      "value": 3290567,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 95,
+      "evidence": "AC 3 - Créances sur la clientèle | 31/12/2024 | 3 290 567",
+      "distractors": [
+        {
+          "value": 2963958,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 95,
+          "reason": "prior_year"
+        },
+        {
+          "value": 3290048,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 155,
+          "reason": "consolidated"
+        }
+      ]
+    }
+  ],
+  "notes": "The official individual balance sheet is after allocation of profits. The total_equity value uses the explicitly reported total of 523 429 mDT."
+}

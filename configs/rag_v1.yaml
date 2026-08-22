@@ -1,0 +1,9 @@
+embedding_model: BAAI/bge-m3
+embedding_revision: 5617a9f61b028005a4858fdac845db406aefb181
+chunking: one_page
+similarity: cosine
+faiss_index: IndexFlatIP
+candidate_k: 64
+pages_per_query: 2
+maximum_pages_before_deduplication: 4
+retrieval_method: bge_m3_faiss_authority_rerank_v1

@@ -1,0 +1,150 @@
+{
+  "doc_id": "UIB_2024",
+  "bank": "Union Internationale de Banques",
+  "target_year": 2024,
+  "target_scope": "individual",
+  "currency": "TND",
+  "fields": [
+    {
+      "field": "total_assets",
+      "status": "found",
+      "value": 8235520,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 140,
+      "evidence": "TOTAL ACTIFS | 2024 | 8 235 520",
+      "distractors": [
+        {
+          "value": 7680911,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 140,
+          "reason": "prior_year"
+        }
+      ]
+    },
+    {
+      "field": "total_equity",
+      "status": "found",
+      "value": 1006480,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 140,
+      "evidence": "TOTAL CAPITAUX PROPRES | 2024 | 1 006 480",
+      "distractors": [
+        {
+          "value": 949839,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 140,
+          "reason": "prior_year"
+        }
+      ]
+    },
+    {
+      "field": "net_banking_income",
+      "status": "found",
+      "value": 537755,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 142,
+      "evidence": "PRODUIT NET BANCAIRE | 2024 | 537 755",
+      "distractors": [
+        {
+          "value": 519473,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 142,
+          "reason": "prior_year"
+        }
+      ]
+    },
+    {
+      "field": "operating_income",
+      "status": "found",
+      "value": 194666,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 142,
+      "evidence": "RÉSULTAT D’EXPLOITATION | 2024 | 194 666",
+      "distractors": [
+        {
+          "value": 214218,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 142,
+          "reason": "prior_year"
+        }
+      ]
+    },
+    {
+      "field": "net_income",
+      "status": "found",
+      "value": 85707,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 142,
+      "evidence": "RÉSULTAT NET DE L’EXERCICE | 2024 | 85 707",
+      "distractors": [
+        {
+          "value": 126617,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 142,
+          "reason": "prior_year"
+        }
+      ]
+    },
+    {
+      "field": "customer_deposits",
+      "status": "found",
+      "value": 6859967,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 140,
+      "evidence": "Dépôts et avoirs de la clientèle | 2024 | 6 859 967",
+      "distractors": [
+        {
+          "value": 6285922,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 140,
+          "reason": "prior_year"
+        }
+      ]
+    },
+    {
+      "field": "net_customer_loans",
+      "status": "found",
+      "value": 6212577,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 140,
+      "evidence": "Créances sur la clientèle | 2024 | 6 212 577",
+      "distractors": [
+        {
+          "value": 6531114,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 140,
+          "reason": "prior_year"
+        }
+      ]
+    }
+  ],
+  "notes": "No formal UIB consolidated statements for 2024 were found in the report. Consolidated distractors are therefore omitted rather than inferred from 2023 embedded images or subsidiary summaries."
+}

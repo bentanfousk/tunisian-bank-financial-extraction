@@ -1,0 +1,47 @@
+﻿{
+    "schema_version":  1,
+    "generated_at":  "2026-08-01T21:20:58.8160953+01:00",
+    "ollama_version":  "ollama version is 0.32.5",
+    "models":  [
+                   {
+                       "name":  "qwen3:4b-instruct-2507-q4_K_M",
+                       "digest":  "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+                       "size_bytes":  2497293803,
+                       "modified_at":  "2026-08-01T18:38:57.8758776+01:00",
+                       "format":  "gguf",
+                       "family":  "qwen3",
+                       "parameter_size":  "4.0B",
+                       "quantization":  "Q4_K_M"
+                   },
+                   {
+                       "name":  "ministral-3:3b-instruct-2512-q4_K_M",
+                       "digest":  "f04aa1c738f64e13c625b82ae92504fc0260fa6723b509ed1ece0fa188179b1d",
+                       "size_bytes":  2953840808,
+                       "modified_at":  "2026-08-01T20:25:23.2281882+01:00",
+                       "format":  "gguf",
+                       "family":  "mistral3",
+                       "parameter_size":  "3.8B",
+                       "quantization":  "Q4_K_M"
+                   },
+                   {
+                       "name":  "gemma3:4b-it-q4_K_M",
+                       "digest":  "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
+                       "size_bytes":  3338801804,
+                       "modified_at":  "2026-08-01T20:49:42.4293364+01:00",
+                       "format":  "gguf",
+                       "family":  "gemma3",
+                       "parameter_size":  "4.3B",
+                       "quantization":  "Q4_K_M"
+                   },
+                   {
+                       "name":  "mistral:7b-instruct-v0.3-q4_K_M",
+                       "digest":  "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+                       "size_bytes":  4372824384,
+                       "modified_at":  "2026-08-01T21:09:07.1656445+01:00",
+                       "format":  "gguf",
+                       "family":  "llama",
+                       "parameter_size":  "7.2B",
+                       "quantization":  "Q4_K_M"
+                   }
+               ]
+}

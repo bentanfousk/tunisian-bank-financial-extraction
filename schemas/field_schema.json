@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://value.local/schemas/field_schema.json",
+  "title": "Track A Financial Extraction Document",
+  "description": "Common structure for human annotations and model predictions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "doc_id",
+    "target_year",
+    "target_scope",
+    "currency",
+    "fields"
+  ],
+  "properties": {
+    "doc_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "bank": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_year": {
+      "type": "integer",
+      "minimum": 2000,
+      "maximum": 2100
+    },
+    "target_scope": {
+      "const": "individual"
+    },
+    "currency": {
+      "const": "TND"
+    },
+    "fields": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "$ref": "#/$defs/field_result"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "field_name": {
+      "type": "string",
+      "enum": [
+        "total_assets",
+        "total_equity",
+        "net_banking_income",
+        "operating_income",
+        "net_income",
+        "customer_deposits",
+        "net_customer_loans"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "individual",
+        "consolidated",
+        "subsidiary",
+        "sector",
+        "unknown"
+      ]
+    },
+    "distractor_reason": {
+      "type": "string",
+      "enum": [
+        "prior_year",
+        "consolidated",
+        "subsidiary",
+        "sector",
+        "wrong_unit",
+        "subtotal",
+        "derived_or_summary",
+        "result_after_accounting_changes",
+        "consolidated_net_income_before_minority_interests",
+        "consolidated_group_net_income",
+        "other"
+      ]
+    },
+    "distractor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit_multiplier",
+        "scope",
+        "source_year",
+        "page",
+        "reason"
+      ],
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit_multiplier": {
+          "type": "integer",
+          "enum": [
+            1,
+            1000,
+            1000000
+          ]
+        },
+        "scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "source_year": {
+          "type": "integer",
+          "minimum": 2000,
+          "maximum": 2100
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "reason": {
+          "$ref": "#/$defs/distractor_reason"
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "field_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "status",
+        "value",
+        "unit_multiplier",
+        "scope",
+        "source_year",
+        "page",
+        "evidence"
+      ],
+      "properties": {
+        "field": {
+          "$ref": "#/$defs/field_name"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "found",
+            "not_found",
+            "ambiguous"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit_multiplier": {
+          "enum": [
+            1,
+            1000,
+            1000000,
+            null
+          ]
+        },
+        "scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "source_year": {
+          "type": "integer",
+          "minimum": 2000,
+          "maximum": 2100
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distractors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/distractor"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "found"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "number"
+              },
+              "unit_multiplier": {
+                "type": "integer",
+                "enum": [
+                  1,
+                  1000,
+                  1000000
+                ]
+              },
+              "page": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_found",
+                  "ambiguous"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "unit_multiplier": {
+                "type": "null"
+              },
+              "page": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

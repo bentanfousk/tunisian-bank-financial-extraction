@@ -1,0 +1,213 @@
+{
+  "doc_id": "BT_2024",
+  "bank": "Banque de Tunisie",
+  "target_year": 2024,
+  "target_scope": "individual",
+  "currency": "TND",
+  "fields": [
+    {
+      "field": "total_assets",
+      "status": "found",
+      "value": 8638841,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 68,
+      "evidence": "Total des Actifs | 2024 | 8 638 841",
+      "distractors": [
+        {
+          "value": 7718521,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 68,
+          "reason": "prior_year"
+        },
+        {
+          "value": 9333021,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 166,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "total_equity",
+      "status": "found",
+      "value": 1411425,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 68,
+      "evidence": "Sous-Total capitaux propres | 2024 | 1 411 425",
+      "distractors": [
+        {
+          "value": 1301310,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 68,
+          "reason": "prior_year"
+        },
+        {
+          "value": 1457011,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 166,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_banking_income",
+      "status": "found",
+      "value": 509985,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 70,
+      "evidence": "Produit net bancaire | 2024 | 509 985",
+      "distractors": [
+        {
+          "value": 477950,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 70,
+          "reason": "prior_year"
+        },
+        {
+          "value": 518336,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 168,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "operating_income",
+      "status": "found",
+      "value": 306884,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 70,
+      "evidence": "Résultat d'exploitation | 2024 | 306 884",
+      "distractors": [
+        {
+          "value": 256369,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 70,
+          "reason": "prior_year"
+        },
+        {
+          "value": 334575,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 168,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_income",
+      "status": "found",
+      "value": 188415,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 70,
+      "evidence": "Résultat net de la période | 2024 | 188 415",
+      "distractors": [
+        {
+          "value": 170327,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 70,
+          "reason": "prior_year"
+        },
+        {
+          "value": 214254,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 168,
+          "reason": "consolidated_net_income_before_minority_interests"
+        },
+        {
+          "value": 199437,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 168,
+          "reason": "consolidated_group_net_income"
+        }
+      ]
+    },
+    {
+      "field": "customer_deposits",
+      "status": "found",
+      "value": 6695428,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 68,
+      "evidence": "Dépôts de la clientèle | 2024 | 6 695 428",
+      "distractors": [
+        {
+          "value": 5803572,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 68,
+          "reason": "prior_year"
+        },
+        {
+          "value": 6695626,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 166,
+          "reason": "consolidated"
+        }
+      ]
+    },
+    {
+      "field": "net_customer_loans",
+      "status": "found",
+      "value": 6067260,
+      "unit_multiplier": 1000,
+      "scope": "individual",
+      "source_year": 2024,
+      "page": 68,
+      "evidence": "Créances sur la clientèle | 2024 | 6 067 260",
+      "distractors": [
+        {
+          "value": 5827707,
+          "unit_multiplier": 1000,
+          "scope": "individual",
+          "source_year": 2023,
+          "page": 68,
+          "reason": "prior_year"
+        },
+        {
+          "value": 6143287,
+          "unit_multiplier": 1000,
+          "scope": "consolidated",
+          "source_year": 2024,
+          "page": 166,
+          "reason": "consolidated"
+        }
+      ]
+    }
+  ]
+}

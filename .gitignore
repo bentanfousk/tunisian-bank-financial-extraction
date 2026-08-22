@@ -1,0 +1,31 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets
+.env
+
+# Raw reports / large data
+data/raw/
+data/optional/
+
+# Reconstructable processed report text
+data/processed/reports_txt/
+
+# Experiment outputs
+artifacts/
+mlruns/
+mlflow.db
+outputs/
+
+# Generated indexes
+*.faiss
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+prompts/extract_v1_1_rejected_*.txt

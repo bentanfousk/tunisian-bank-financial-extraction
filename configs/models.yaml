@@ -1,0 +1,30 @@
+local_models:
+  - id: qwen3_4b
+    provider: ollama
+    tag: qwen3:4b-instruct-2507-q4_K_M
+    role: primary
+    enabled: true
+
+  - id: ministral3_3b
+    provider: ollama
+    tag: ministral-3:3b-instruct-2512-q4_K_M
+    role: primary
+    enabled: true
+
+  - id: gemma3_4b
+    provider: ollama
+    tag: gemma3:4b-it-q4_K_M
+    role: primary
+    enabled: true
+
+  - id: mistral_7b
+    provider: ollama
+    tag: mistral:7b-instruct-v0.3-q4_K_M
+    role: stretch
+    enabled: true
+
+cloud_baseline:
+  id: gemini_flash
+  provider: google
+  role: incumbent_baseline
+  enabled: true

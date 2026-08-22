@@ -1,0 +1,11 @@
+Document : {{DOC_ID}}
+Banque : {{BANK}}
+Exercice cible : {{TARGET_YEAR}}
+
+Extrais les 7 champs demandés à partir du contexte suivant.
+
+----- BEGIN_CONTEXT -----
+
+{{CONTEXT}}
+
+----- END_CONTEXT -----
