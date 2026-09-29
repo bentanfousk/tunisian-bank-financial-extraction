@@ -197,7 +197,12 @@ def load_jsonl_records(
     return records
 
 
-def ingest_document(doc_id: str) -> list[dict[str, Any]]:
+def ingest_document(
+    doc_id: str,
+    *,
+    pdf_path: Path | None = None,
+    jsonl_path: Path | None = None,
+) -> list[dict[str, Any]]:
     """
     Build normalized V2 page records for one complete report.
 
@@ -207,10 +212,11 @@ def ingest_document(doc_id: str) -> list[dict[str, Any]]:
 
     bank, fiscal_year = parse_doc_id(doc_id)
 
-    pdf_index = build_pdf_index()
-    pdf_path = resolve_pdf_path(doc_id, pdf_index)
-
-    jsonl_path = REPORTS_TEXT_DIR / f"{doc_id}.jsonl"
+    if pdf_path is None:
+        pdf_index = build_pdf_index()
+        pdf_path = resolve_pdf_path(doc_id, pdf_index)
+    if jsonl_path is None:
+        jsonl_path = REPORTS_TEXT_DIR / f"{doc_id}.jsonl"
 
     text_records = load_jsonl_records(
         jsonl_path=jsonl_path,
@@ -248,9 +254,7 @@ def ingest_document(doc_id: str) -> list[dict[str, Any]]:
                 "doc_id": doc_id,
                 "bank": bank,
                 "fiscal_year": fiscal_year,
-                "pdf_path": str(
-                    pdf_path.relative_to(PROJECT_ROOT)
-                ),
+                "pdf_path": str(pdf_path.relative_to(PROJECT_ROOT)),
                 "pdf_page": pdf_page,
                 "report_page": page_metadata["report_page"],
                 "page_label": page_metadata["page_label"],

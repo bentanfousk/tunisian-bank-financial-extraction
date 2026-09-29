@@ -23,6 +23,11 @@ outputs/
 # Generated indexes
 *.faiss
 
+# Local demo uploads and generated files
+demo_runtime/
+demo/frontend/node_modules/
+demo/frontend/dist/
+
 # IDE / OS
 .vscode/
 .idea/

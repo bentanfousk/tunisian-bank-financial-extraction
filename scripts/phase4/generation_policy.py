@@ -139,6 +139,7 @@ def generate_with_one_repair(
     messages: list[dict[str, str]],
     schema: dict[str, Any],
     settings: dict[str, Any],
+    on_retry: Any = None,
 ) -> dict[str, Any]:
     """
     Run the normal extraction once.
@@ -174,6 +175,9 @@ def generate_with_one_repair(
             "retry_result": None,
             "retry_validation": None,
         }
+
+    if on_retry is not None:
+        on_retry(first_validation)
 
     repair_messages = build_repair_messages(
         raw_text=first_result["text"],
